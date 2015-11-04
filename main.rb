@@ -131,8 +131,11 @@ class SkypeBot
     return @handled = false if @handled
 
     if valid?(message)
-      @sender.notify() if @sender
-      send_message()
+      if @sender
+        @sender.notify()
+      else
+        send_message()
+      end
     else
       print '.'
     end
