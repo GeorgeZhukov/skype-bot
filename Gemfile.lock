@@ -3,6 +3,7 @@ GEM
   specs:
     skype (0.2.8)
       tmp_cache
+    slop (4.2.0)
     terminal-table (1.5.2)
     tmp_cache (0.1.1)
 
@@ -11,6 +12,7 @@ PLATFORMS
 
 DEPENDENCIES
   skype
+  slop
   terminal-table
 
 BUNDLED WITH
